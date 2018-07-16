@@ -67,7 +67,7 @@ $brand-secondary: rgb(211,211,211);
     font-size: $font-size-large;
 
     .c-header-action {
-      margin: 0 $base-spacing*4 0 $base-spacing*4
+      margin: 0 $base-spacing*4
     }
   }
 }
@@ -103,6 +103,5 @@ $brand-secondary: rgb(211,211,211);
 
   .c-card-content {
     margin: $base-spacing * 4 0;
-    margin-top: $base-spacing * 4;
   }
 }
