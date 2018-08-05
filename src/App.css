@@ -1,15 +1,86 @@
-.App {
-  text-align: center; }
+.body {
+  padding: 15px;
+  align-items: stretch;
+}
 
-.App-logo {
+.field {
+  border: 3px black solid;
+  flex-grow: 3;
+  background-color: green;
+}
+
+.game-watch {
+  border: 5px;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.stopwatch-timer {
+  font-size: 76px;
+  font-weight: 100;
+  line-height: 160px;
+  margin: 0;
+  border: solid #cecfd0;
+  border-width: 1px 0;
+  background-color: white;
+  text-align: center;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 20px;
+  
+  display: inline-block;
+  
+  width: 72px;
+  height: 72px;
+  margin: 24px;
+  padding: 0;
+  
+  cursor: pointer;
+  letter-spacing: 1px;
+  
+  border: 0;
+  border-radius: 50%;
+  outline: none;
+  background: rgb(28, 71, 212);
+}
+
+.start-btn { color: #4bd761 }
+.stop-btn  { color: #fd3d2a }
+
+.buttons {
+  
+}
+.player-panel {
+  padding: 5px;
+  flex-grow: 3;
+}
+
+.panel {
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.soccer-ball {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+  height: 80px; 
+}
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.header {
+  background-color: blue;
+  height: 90px;
+  width: 100%;
   padding: 20px;
-  color: white; }
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-item {
+  padding: 10px;
+}
 
 .App-title {
   font-size: 1.5em; }
