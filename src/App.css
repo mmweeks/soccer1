@@ -2,11 +2,29 @@
   padding: 15px;
   align-items: stretch;
 }
-
+.field-side {
+  flex-grow: 3;
+}
 .field {
   border: 3px black solid;
-  flex-grow: 3;
   background-color: green;
+}
+.player-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.player-person {
+  background-color: blue;
+  height: 35px;
+  width: 35px;
 }
 
 .game-watch {
@@ -26,7 +44,7 @@
   text-align: center;
 }
 
-.btn {
+.btn1 {
   font-family: inherit;
   font-size: 20px;
   

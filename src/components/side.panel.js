@@ -12,11 +12,6 @@ class SidePanel extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            game: {
-                name: null,
-                opponent: null,
-                isSet: false
-            },
             secondsElapsed: 0,
             lastClearedIncrementer: null,
             gameMessage: 'FIRST HALF'
@@ -35,12 +30,12 @@ class SidePanel extends Component {
           secondsElapsed: this.state.secondsElapsed + 1
         });
         if (this.state.secondsElapsed === GAME_TIMES.HALF) {
-            this.handleStopClick();
+            // this.handleStopClick();
             this.setState({
               gameMessage: 'SECOND HALF'
             });
         } else if (this.state.secondsElapsed === GAME_TIMES.GAME) {
-          this.handleResetClick();
+        //   this.handleResetClick();
       }
       }, 1000);
     }
@@ -59,62 +54,29 @@ class SidePanel extends Component {
         secondsElapsed: 0
       });
     }
-    onSecondUpdate(isUpdate) {
-        this.setState({
-        });
-        return this.state.secondsElapsed;
-    }
-    updateGame() {
-        this.setState({
-            game: {
-                isSet: true,
-                name: this.state.game.name,
-                opponent:  this.state.game.opponent
-            }
-        });
-        console.log(this.state.game);
-    }
-    updateName(e) {
-        this.setState({
-            game: {
-                isSet: false,
-                name: e.target.value,
-                opponent:  this.state.game.opponent
-            }
-        });
-        console.log(this.state.game);
-    }
-    updateOpponent(e) {
-        this.setState({
-            game: {
-                isSet: false,
-                name: this.state.game.name,
-                opponent: e.target.value
-            }
-        });
-        console.log(this.state.game);
-    }
     isPaused() {
         return this.incrementer === this.state.lastClearedIncrementer;
     }
     render() {
         return (
         <div className="panel">
-        {(this.state.game.isSet
-            ? <GameWatch 
+        {(this.props.gameIsSet
+            ? <div>
+            <GameWatch 
                 isPaused={this.isPaused.bind(this)}
                 handleStopClick={this.handleStopClick.bind(this)}
                 handleResetClick={this.handleResetClick.bind(this)}
                 handleStartClick={this.handleStartClick.bind(this)}
                 gameMessage={this.state.gameMessage}
                 secondsElapsed={this.state.secondsElapsed} />
+            <PlayerPanel onPlayerChange={this.props.onPlayerChange} onTheField={this.props.onTheField} gameTime={this.state.secondsElapsed}/>
+            </div>
             : <div>
-                <label>Name</label><input type="text" onChange={this.updateName.bind(this)} />
-                <label>Opponent</label><input type="text" onChange={this.updateOpponent.bind(this)} />
-                <button className="btn" onClick={this.updateGame.bind(this)}>Save</button>
+                <label>Name</label><input type="text" onChange={this.props.updateName} />
+                <label>Opponent</label><input type="text" onChange={this.props.updateOpponent} />
+                <button className="btn" onClick={this.props.updateGame}>Save</button>
               </div>
         )}
-            <PlayerPanel />
         </div>
         );
     }
