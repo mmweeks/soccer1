@@ -4,85 +4,85 @@ export default {
     ],
     "PLAYERS": [
         {
-            "NAME": "EmmaLynn Green",
+            "NAME": "EmmaLynn",
             "NUMBER": 11,
             "POSITIONS": [
                 "Left_Mid", "Right_Mid", "Left_Forward", "Right_Forward", "Keeper", "Sweeper", "Stopper"
             ]
         }, {
-            "NAME": "Merisol Tlatenchi",
+            "NAME": "Merisol",
             "NUMBER": 5,
             "POSITIONS": [
                 "Left_Forward", "Right_Forward", "Left_Mid"
             ]
         }, {
-            "NAME": "Annie Fimeron",
+            "NAME": "Annie",
             "NUMBER": 88,
             "POSITIONS": [
                 "Left_Back", "Right_Back", "Left_Mid"
             ]
         }, {
-            "NAME": "Haley Weeks",
+            "NAME": "Haley",
             "NUMBER": 8,
             "POSITIONS": [
                 "Right_Back", "Left_Back"
             ]
         }, {
-            "NAME": "Zoe K 'zoko'",
+            "NAME": "Zoko",
             "NUMBER": 14,
             "POSITIONS": [
                 "Right_Mid", "Left_Mid"
             ]
         }, {
-            "NAME": "Sharon S",
+            "NAME": "Sharon",
             "NUMBER": 0,
             "POSITIONS": [
                 "Right_Forward", "Left_Forward", "Right_Mid", "Left_Mid"
             ]
         }, {
-            "NAME": "Titi Cooper",
+            "NAME": "Titi",
             "NUMBER": 13,
             "POSITIONS": [
                 "Right_Back", "Left_Back", "Right_Mid", "Left_Mid"
             ]
         }, {
-            "NAME": "Jackie Trout",
+            "NAME": "Jackie",
             "NUMBER": 20,
             "POSITIONS": [
                 "Sweeper", "Left_Back", "Right_Back"
             ]
         }, {
-            "NAME": "Savanna R",
+            "NAME": "Savanna",
             "NUMBER": 40,
             "POSITIONS": [
                 "Stopper", "Left_Forward", "Right_Forward"
             ]
         }, {
-            "NAME": "Josie Ryan",
+            "NAME": "Josie",
             "NUMBER": 99,
             "POSITIONS": [
                 "Stopper", "Left_Mid", "Right_Mid"
             ]
         }, {
-            "NAME": "Zoe Ryan",
+            "NAME": "Zoe",
             "NUMBER": 3,
             "POSITIONS": [
                 "Stopper", "Left_Forward", "Right_Forward"
             ]
         }, {
-            "NAME": "Emma Carlson",
+            "NAME": "Emma",
             "NUMBER": 1,
             "POSITIONS": [
                 "Right_Mid", "Left_Mid", "Left_Forward", "Right_Forward"
             ]
         }, {
-            "NAME": "Sophia Brown 'fifi'",
+            "NAME": "Fifi",
             "NUMBER": 9,
             "POSITIONS": [
                 "Sweeper", "Left_Back", "Right_Back"
             ]
         }, {
-            "NAME": "Sophia Bakke 'thumper'",
+            "NAME": "Thumper",
             "NUMBER": 31,
             "POSITIONS": [
                 "Keeper","Left_Mid", "Right_Mid"
