@@ -21,10 +21,31 @@
   align-items: center;
   padding: 15px;
 }
-.player-person {
-  background-color: blue;
-  height: 35px;
-  width: 35px;
+.player-card {
+  background-color: lightblue;
+  height: 125px;
+  width: 85px;
+}
+.player-onField {
+  display: inline-block;
+  
+  width: 25px;
+  height: 25px;
+  margin: 4px;
+  padding: 0;
+  
+  cursor: pointer;
+  letter-spacing: 1px;
+  
+  border: 0;
+  border-radius: 50%;
+  outline: none;
+  background: lightblue;
+  color: red;
+}
+
+.player-onField.on {
+  color: green;
 }
 
 .game-watch {
